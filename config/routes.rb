@@ -1,5 +1,6 @@
 Bookstore::Application.routes.draw do
   get "/books" => "books#index", as: 'books'
+  get "/books/:id" => "books#show", as: 'book'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,7 +14,7 @@ Bookstore::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  #   resources :productss
 
   # Example resource route with options:
   #   resources :products do
